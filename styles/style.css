@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box; 
+}
+
+.nav {
+    position: relative;
+}
+
+.list {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 20px;
+    list-style: none;
+    background-color: #333333;
+}
+
+.item {      
+    padding: 20px;
+}
+
+.link {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #c8c8c8;
+}
+
+.plus {
+    margin-left: 10px;
+    color: #c8c8c8;
+    font-size: 20px;
+}
+
+.drop-list {
+    position: absolute;
+    display: none;
+    top: 63px;
+    left: 99px;
+    list-style: none;
+}
+
+.drop-item {
+    width: 350px;
+    padding: 20px 30px;
+    background-color: #199bfe;
+    border: 1px solid #1b3c55;
+}
+
+.drop-link {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.drop-plus {
+    float: right;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.drop2-list {
+    position: absolute;
+    display: none;
+    top: 0px;
+    left: 349px;
+    list-style: none;
+}
+
+.drop3-list {
+    position: absolute;
+    display: none;
+    top: 64px;
+    left: 349px;
+    list-style: none;
+}
+
+.item:hover {
+    background-color: #199bfe;
+}
+
+.item:hover .link,
+.item:hover .plus {
+    color: #ffffff;
+}
+
+.item:hover .drop-list {
+    display: block;
+}
+
+.drop-item:hover {
+    background-color: #199bfe;
+}
+
+.drop-item:hover .drop2-list {
+    display: block;
+}
+
+.drop-item:hover .drop3-list {
+    display: block;
+}
